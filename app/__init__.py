@@ -28,9 +28,7 @@ def create_app(test_config=None):
         # load the test config if passed in
         app.config.from_mapping(test_config)
 
-    from app.bug.views import bug
     from app.user.views import login
-    app.register_blueprint(bug, url_prefix='/bug')
     app.register_blueprint(login, url_prefix='/login')
     app.config.from_object(config.DevelopmentConfig)
 

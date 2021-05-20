@@ -9,7 +9,7 @@ import os
 DIALECT = 'mysql'
 DRIVER = 'pymysql'
 USERNAME = 'root'
-PASSWORD = 'HmElIsBkPKQNmfN2'
+PASSWORD = 'XXXXXX'
 HOST = '192.168.2.92'
 PORT = '3306'
 DATABASE = 'qa_p'
@@ -29,7 +29,7 @@ class DevelopmentConfig(BaseConfig):
 
 class TestingConfig(BaseConfig):
     TESTING = True
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:root:HmElIsBkPKQNmfN2@192.168.2.92:3306/qa_p?charset=utf8"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:root:XXXX@192.168.2.92:3306/qa_p?charset=utf8"
 
 
 
